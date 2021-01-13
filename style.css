@@ -58,10 +58,14 @@ hr{
     display: flex;
     
 }
+#header ul li+li {
+    margin-top: 3rem;
+}
+
 #header ul li{
     display:inline;
     text-decoration: none;  
-    margin-top: 1rem;
+    margin-top: -1rem;
     
 } 
 #header ul li a{
@@ -72,7 +76,7 @@ hr{
 
 #header ul li a:hover{
     font: bold;
-    color:#3fc1f8  ;
+    color:#3fc1f8;
 }
 footer {
     bottom: 0px;
