@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-
 html, body, h1,p,ul,li
 {
     margin: 0;
@@ -8,29 +6,23 @@ html, body, h1,p,ul,li
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-
 h1{
-
     color: #009fe3;
     text-align: center;
     margin-top: 3rem;
-
 }
 #topo{
     text-decoration: underline;
     font: bold;
     color: #fff;
-    
 }
-#header{
-    
+#header{    
     background-color: #FF7E00;
     height: 6.4rem;
     width: 100%;
     border-radius: 2px;
     min-height: 60px;
     box-sizing: border-box;
-    /* TESTE*/
     background-image: #FF7E00;
    
 }  
@@ -56,30 +48,24 @@ hr{
     width: 17rem;
     margin: 0;
     margin-top: 1.3rem;
-    box-sizing: border-box;
-   
+    box-sizing: border-box;   
 }
-#header img{
-    
-    transition: linear 0.2 0.3;
-    
+#header img{   
+    transition: linear 0.2 0.3;    
 }
 
 #header ul{
     list-style: none;
     align-items:center;
     height: 3rem;
-    display: flex;
-    
+    display: flex;  
 }
 
 #header ul li{
     display:inline;
     text-decoration: none;  
     margin-top: 4rem;
-    margin-left: 1rem;
-    
-    
+    margin-left: 1rem;        
 } 
 #header ul li {
     text-decoration: none; 
@@ -166,7 +152,6 @@ footer {
     height: fit-content;
     border-radius: 11px;
     border: solid 1px #FF7E00;
-    
 }
 #itens-box{
     height: fit-content;
@@ -190,8 +175,7 @@ footer {
     margin-left: 2rem; 
 }
 #itens-box:first-child{
-        margin-left: 2rem;
-       
+        margin-left: 2rem;      
     }
 html::-webkit-scrollbar-track {
     background-color: #F4F4F4;
@@ -256,8 +240,7 @@ html::-webkit-scrollbar-thumb {
     }
     #rodape-contato{
         height: fit-content;
-        margin-left: 3rem
-        
+        margin-left: 3rem;       
     }
 
 }
@@ -274,19 +257,15 @@ html::-webkit-scrollbar-thumb {
     
     #rodape-endereco{
         height: fit-content;
-        margin-left: 6rem;
-        
-        
+        margin-left: 6rem;               
     }
     #rodape-comodidade{
         height: fit-content;
-        margin-left: -1rem;
-        
+        margin-left: -1rem;      
     }
     #rodape-contato{
         height: fit-content;
-        margin-left: 3rem
-        
+        margin-left: 3rem;        
     }
 }
 @media (max-width: 1290px){  
