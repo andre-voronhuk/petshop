@@ -40,6 +40,9 @@ h1{
     CLARO  #fa942d
     ESCURO #FF7E00
 */
+a {
+    color: inherit;
+}
 hr{
     border: #FF7E00 1px solid;
 }
