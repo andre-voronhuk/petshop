@@ -1,9 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
 html, body, h1,p,ul,li
 {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
+
 h1{
 
     color: #009fe3;
@@ -15,21 +20,24 @@ h1{
     text-decoration: underline;
     font: bold;
     color: #fff;
+    
 }
 #header{
+    
     background-color: #FF7E00;
-    height: 6.0rem;
+    height: 6.4rem;
     width: 100%;
     border-radius: 2px;
     min-height: 60px;
+    box-sizing: border-box;
+    /* TESTE*/
+    background-image: #FF7E00;
+   
 }  
 /* 
     CORES
-
     AZUL #009fe3 
-
     CLARO  #fa942d
-
     ESCURO #FF7E00
 */
 hr{
@@ -44,39 +52,53 @@ hr{
     height: 6.0rem ;
     width: 17rem;
     margin: 0;
-    margin-top: 4rem;
+    margin-top: 1.3rem;
+    box-sizing: border-box;
    
 }
-#header img:hover{
-    opacity: 90%;
+#header img{
+    
+    transition: linear 0.2 0.3;
     
 }
+
 #header ul{
     list-style: none;
     align-items:center;
-    height: 2.5rem;
+    height: 3rem;
     display: flex;
     
-}
-#header ul li+li {
-    margin-top: 3rem;
 }
 
 #header ul li{
     display:inline;
     text-decoration: none;  
+    margin-top: 4rem;
+    margin-left: 1rem;
     
     
 } 
-#header ul li a{
+#header ul li {
     text-decoration: none; 
     color:#ffffff;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
+#header hr{
+    border:none;
+
+}
+#header ul li {
+    transition: linear 0.2s;
+}
+    
 
 #header ul li a:hover{
-    font: bold;
-    color:#3fc1f8;
+    
+    padding-bottom: 2px;
+    color: #ffdcb8;
+    filter: drop-shadow(0px 2px 4px rgb(12, 12, 12));
+    color:  rgb(255, 255, 255);
+   
 }
 footer {
     bottom: 0px;
@@ -98,7 +120,7 @@ footer {
     display: flex;
 }
 #rodape-atendimendo{
-    margin-left: 1rem;
+    
     background-color: #fa942d;
     margin-top: 0.3rem;
     border-radius: 10px;
@@ -170,17 +192,21 @@ footer {
     }
 html::-webkit-scrollbar-track {
     background-color: #F4F4F4;
+   
+    box-sizing: border-box;
 }
 html::-webkit-scrollbar {
-    width: 11px;
     height: 0px;
     background: #F4F4F4;
+    
      
 
 }
 html::-webkit-scrollbar-thumb {
+    
     background: #dad7d7;
-     border-radius: 4px;
+    border-radius: 4px;
+   
      
 }
 @media (max-width: 900px){
@@ -195,6 +221,7 @@ html::-webkit-scrollbar-thumb {
     }
 }
 @media (max-width: 1290px){  
+    
     #rodape-container{
         width: 100%;
         height: 70%;
@@ -204,6 +231,11 @@ html::-webkit-scrollbar-thumb {
         justify-content: center;
         height: fit-content;
     }
+    #rodape-container ul li+li+li{
+       margin: 1rem;
+    }
+    
+
     #rodape-container ul{
     
         display: flex;
@@ -211,31 +243,36 @@ html::-webkit-scrollbar-thumb {
         flex-wrap: wrap;
         justify-content: center;
         height: fit-content;
+       
 
     }
     #rodape-atendimendo{
         height: fit-content;
-        width: 17rem;
+        width: 100%;
+        
     }
     #rodape-endereco{
         height: fit-content;
+        
     }
     #rodape-comodidade{
         height: fit-content;
+        
     }
     #rodape-contato{
         height: fit-content;
+        
     }
 }
-@media (max-width:1100px){
+@media (max-width:1023px){
     #header {
         background-color: #FF7E00;
         width: 100%;
         border-radius: 2px;
         padding-bottom: 2rem;
-   
         height: 20%;
         text-align: center;
+        
     }
     .hr{
         border-color: #fff;
@@ -246,7 +283,30 @@ html::-webkit-scrollbar-thumb {
         flex-wrap: wrap;
         height: fit-content;
     }
-    #header ul li + li{
+    #header ul li+li+li{
+        height: fit-content;
+        text-decoration: none; 
+        color: #FF7E00;
+        margin-bottom: 0.5rem;
+        list-style: none;
+        list-style-type: none;
+        border-radius: 11px;  
+        background-color:  #fa942d;
+        padding: 1rem;
+	   
+    }
+    #header ul li h2 a {
+        margin-top: 1rem;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+    
+    }
+    #header ul li+li {
+        margin-left: -7rem;
+    }
+    #header ul li + li + li{
+        margin-left: 0.5rem;
         height: fit-content;
         text-decoration: none;  
         color: #FF7E00;
@@ -258,19 +318,23 @@ html::-webkit-scrollbar-thumb {
         background-color:  #fa942d;
         padding: 1rem;
     }
-    #header ul li h2 a {
-        margin-top: 1rem;
-        color: #fff;
-        text-align: center;
-    
+    #header ul li hr{
+        border: 1px solid #fff;
+    }
+   
+    #header ul li + li + li:hover{
+        color: #ffdcb8;
+        filter: drop-shadow(0px 2px 4px rgb(12, 12, 12));
+        color:  rgb(255, 255, 255);
+
     }
     #header ul li{
         margin-top: 1rem;
+	    margin-left: -15%;
         text-align: center;
         justify-content: center;  
         padding: 1rem;
         width: 10rem;
-        
         
     }
     #header h2{
@@ -282,4 +346,36 @@ html::-webkit-scrollbar-thumb {
     }
     
 }
+@media (max-width:500px){
 
+    #rodape-container ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: fit-content;
+        margin-left: -6rem;
+    }
+    #rodape-container ul li{
+        transition: linear 0.2s;
+    }
+    #rodape-container ul li:hover{
+        filter: drop-shadow(0px 2px 4px rgb(12, 12, 12));
+
+    }
+    #header ul li{
+        margin-top: 1rem;
+	    margin-left: -20%;
+        text-align: center;
+        justify-content: center;  
+        padding: 1rem;
+        width: 10rem;      
+    }
+    #header{
+    width: 101%;
+    border-radius: 2px;
+    min-height: 60px;
+    box-sizing: border-box;
+    }
+
+}
