@@ -253,9 +253,11 @@ html::-webkit-scrollbar-thumb {
         height: fit-content;
         width: 100%;
         
+        
     }
     #rodape-endereco{
         height: fit-content;
+        margin: 1rem;
         
     }
     #rodape-comodidade{
@@ -275,6 +277,11 @@ html::-webkit-scrollbar-thumb {
         padding-bottom: 2rem;
         height: 20%;
         text-align: center;
+        
+    }
+    #rodape-atendimendo{
+        
+        margin-left: -1rem;
         
     }
     .hr{
