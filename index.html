@@ -9,12 +9,30 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap" rel="stylesheet">
+  
+  
+  <script>
+        window.location = "#c-item-1";//seleciona o primeiro item do carrousel quando carrega
 
+        window.addEventListener('hashchange',()=>{
+            const div = document.getElementById("c-item-1") //pega o elemento do primeiro slide
+            const url = window.location //pega a URL
+            const FocoNoSlide =  url.href.indexOf('#c-item')>-1 //true ou false, caso tenha ou nao foco no slide
 
+            if (FocoNoSlide==false) {
+                div.style.display="block" //mostra o primeiro slide caso perca o foco 
+            }
+            if (url.href.indexOf('#c-item-2')>-1 || url.href.indexOf('#c-item-3')>-1){ 
+                div.style.display="none" //caso tenha outro slide sendo exibido, esconde o primeiro
+            }else{
+                div.style.display="block"// caso seja outro elemento com foco (contato por ex.) mostra o slide 1
+            }  
+       })
+         
 
+    </script>
 </head>
-
-<body>
+<body>   
     <div id="header">
         <ul> <li></li>
             <li> <a href="#"> <img src="image/logo-pet-junto.png"></a></li>
@@ -23,32 +41,66 @@
                         <hr class="hr"></a></h2>
             </li>
             <li>
-
                 <h2><a href="index.html#produtos">Produtos
                         <hr class="hr"></a></h2>
-
-
             </li>
             <li>
-
                 <h2><a href="sobre.html">Sobre
                         <hr class="hr"></a></h2>
-
             </li>
             <li>
                 <h2><a href="index.html#rodape-contato">Contato
                         <hr class="hr"></a></h2>
-
             </li>
             <li>
                 <h2><a href="index.html#rodape-endereco">Lojas
                         <hr class="hr"></a></h2>
-
             </li>
-        </ul>
-
-
+        </ul>        
+    </div>  
+    <div class="carrousel-container">
+        <h1>Destaques</h1>
+        <div class="c-item c-item-1" class="active"id="c-item-1">
+            
+            <div id="carrousel-item">
+                <img src="image/racao-pedigree.jpg" alt="">
+                <hr>
+                <p id="itens-box-text">Ração Seca Pedigree Carne 3kg</p>
+                <p id="itens-box-text">R$35,00</p>
+            </div>
+            <a class="anterior" href="#c-item-3">Voltar</a>
+            <a class="prox" href="#c-item-2">Avançar</a>
+        </div>  
+        <div class="c-item c-item-2" id="c-item-2">          
+            <div id="carrousel-item">
+                <img src="image/racao-cachorro.jpg" alt="">
+                <hr>
+                <p id="itens-box-text">Ração Special Dog Sabor Carne 20kg</p>
+                <p id="itens-box-text">R$98,50</p>
+            </div>
+            <a class="anterior" href="#c-item-1">Voltar</a>
+            
+            <a class="prox"href="#c-item-3">Avançar</a>
+        </div>
+    
+        <div class="c-item c-item-3" id="c-item-3">
+            
+            <div id="carrousel-item">
+                <img src="image/racao-gato.jpg" alt="">
+            <hr>
+            <p id="itens-box-text">Whiskas Sachê Sabor Carne ao Molho</p>
+            <p id="itens-box-text">R$2,00 un</p>
+            </div>
+            <a class="anterior" href="#c-item-2">Voltar</a>
+            
+            <a class="prox"href="#c-item-1">Avançar</a>
+        </div>
     </div>
+
+
+
+
+
     <h1>Ofertas</h1>
 
     <div id="itens-container">
