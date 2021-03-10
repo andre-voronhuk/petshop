@@ -176,6 +176,8 @@ hr{
 }
 footer {
     bottom: 0px;
+    margin:0px;
+    padding: 0px;
     width: 100%;
 }
 #rodape-container ul li:hover{
